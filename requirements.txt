@@ -3,4 +3,4 @@ pandas==1.4.3
 requests==2.28.1
 streamlit_lottie == 0.0.3
 plotly == 5.11.0
-matplolib == 3.5.2
+matplolib
