@@ -26,7 +26,7 @@ with col2:
     st.header("Impact of 5G")
 
 
-tab1,tab2 = st.tabs(["Revenue & Users","Market Share"])
+tab1,tab2,tab3 = st.tabs(["Revenue & Users","Market Share","Active percentage"])
 
 overdf = pd.read_csv("./atliqo_report.csv")
 marketdf=pd.read_csv("./market_share.csv")
@@ -35,6 +35,9 @@ with tab1:
     metric5g.display_metric(overdf)
 with tab2:
     market5g.display_market(marketdf)
+
+with tab3:
+    metric5g.city_share(overdf)
 
 #ends here
 hide_streamlit_style = """
